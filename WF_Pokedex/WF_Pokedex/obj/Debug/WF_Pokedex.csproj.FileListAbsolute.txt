@@ -1,0 +1,30 @@
+D:\NET Projects\WF_Pokedex\WF_Pokedex\bin\Debug\WF_Pokedex.exe.config
+D:\NET Projects\WF_Pokedex\WF_Pokedex\bin\Debug\WF_Pokedex.exe
+D:\NET Projects\WF_Pokedex\WF_Pokedex\bin\Debug\WF_Pokedex.pdb
+D:\NET Projects\WF_Pokedex\WF_Pokedex\obj\Debug\WF_Pokedex.csprojAssemblyReference.cache
+D:\NET Projects\WF_Pokedex\WF_Pokedex\obj\Debug\WF_Pokedex.PokedexForm.resources
+D:\NET Projects\WF_Pokedex\WF_Pokedex\obj\Debug\WF_Pokedex.Properties.Resources.resources
+D:\NET Projects\WF_Pokedex\WF_Pokedex\obj\Debug\WF_Pokedex.csproj.GenerateResource.cache
+D:\NET Projects\WF_Pokedex\WF_Pokedex\obj\Debug\WF_Pokedex.csproj.CoreCompileInputs.cache
+D:\NET Projects\WF_Pokedex\WF_Pokedex\obj\Debug\WF_Pokedex.exe
+D:\NET Projects\WF_Pokedex\WF_Pokedex\obj\Debug\WF_Pokedex.pdb
+D:\NET Projects\WF_Pokedex\WF_Pokedex\bin\Debug\Newtonsoft.Json.dll
+D:\NET Projects\WF_Pokedex\WF_Pokedex\bin\Debug\System.Net.Http.Formatting.dll
+D:\NET Projects\WF_Pokedex\WF_Pokedex\bin\Debug\Newtonsoft.Json.xml
+D:\NET Projects\WF_Pokedex\WF_Pokedex\bin\Debug\System.Net.Http.Formatting.xml
+D:\NET Projects\WF_Pokedex\WF_Pokedex\obj\Debug\WF_Pokedex.csproj.CopyComplete
+D:\Github\WF-Pokedex\WF_Pokedex\WF_Pokedex\bin\Debug\WF_Pokedex.exe.config
+D:\Github\WF-Pokedex\WF_Pokedex\WF_Pokedex\bin\Debug\WF_Pokedex.exe
+D:\Github\WF-Pokedex\WF_Pokedex\WF_Pokedex\bin\Debug\WF_Pokedex.pdb
+D:\Github\WF-Pokedex\WF_Pokedex\WF_Pokedex\bin\Debug\Newtonsoft.Json.dll
+D:\Github\WF-Pokedex\WF_Pokedex\WF_Pokedex\bin\Debug\System.Net.Http.Formatting.dll
+D:\Github\WF-Pokedex\WF_Pokedex\WF_Pokedex\bin\Debug\Newtonsoft.Json.xml
+D:\Github\WF-Pokedex\WF_Pokedex\WF_Pokedex\bin\Debug\System.Net.Http.Formatting.xml
+D:\Github\WF-Pokedex\WF_Pokedex\WF_Pokedex\obj\Debug\WF_Pokedex.csprojAssemblyReference.cache
+D:\Github\WF-Pokedex\WF_Pokedex\WF_Pokedex\obj\Debug\WF_Pokedex.PokedexForm.resources
+D:\Github\WF-Pokedex\WF_Pokedex\WF_Pokedex\obj\Debug\WF_Pokedex.Properties.Resources.resources
+D:\Github\WF-Pokedex\WF_Pokedex\WF_Pokedex\obj\Debug\WF_Pokedex.csproj.GenerateResource.cache
+D:\Github\WF-Pokedex\WF_Pokedex\WF_Pokedex\obj\Debug\WF_Pokedex.csproj.CoreCompileInputs.cache
+D:\Github\WF-Pokedex\WF_Pokedex\WF_Pokedex\obj\Debug\WF_Pokedex.csproj.CopyComplete
+D:\Github\WF-Pokedex\WF_Pokedex\WF_Pokedex\obj\Debug\WF_Pokedex.exe
+D:\Github\WF-Pokedex\WF_Pokedex\WF_Pokedex\obj\Debug\WF_Pokedex.pdb
