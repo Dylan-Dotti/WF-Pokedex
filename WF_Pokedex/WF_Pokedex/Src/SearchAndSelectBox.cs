@@ -1,12 +1,9 @@
-﻿using Newtonsoft.Json.Linq;
-using System;
+﻿using System;
 using System.Collections.Generic;
-using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using WF_Pokedex.PokeApiServices;
 
 namespace WF_Pokedex
 {
@@ -64,9 +61,7 @@ namespace WF_Pokedex
             nameSearchBox.Enabled = false;
             nameSelectBox.Enabled = false;
             nameSelectBox.Items.Clear();
-            Console.WriteLine("Calling api");
             IReadOnlyList<string> names = await pokemonService.GetCategoryNames();
-            Console.WriteLine("Completed api call");
             // copy nameSelectBox items to default items
             foreach (string name in names)
             {

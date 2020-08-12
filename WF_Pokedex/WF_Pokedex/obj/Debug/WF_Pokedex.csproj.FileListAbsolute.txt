@@ -28,3 +28,11 @@ D:\Github\WF-Pokedex\WF_Pokedex\WF_Pokedex\obj\Debug\WF_Pokedex.csproj.CoreCompi
 D:\Github\WF-Pokedex\WF_Pokedex\WF_Pokedex\obj\Debug\WF_Pokedex.csproj.CopyComplete
 D:\Github\WF-Pokedex\WF_Pokedex\WF_Pokedex\obj\Debug\WF_Pokedex.exe
 D:\Github\WF-Pokedex\WF_Pokedex\WF_Pokedex\obj\Debug\WF_Pokedex.pdb
+D:\Github\WF-Pokedex\WF_Pokedex\WF_Pokedex\bin\Debug\xunit.abstractions.dll
+D:\Github\WF-Pokedex\WF_Pokedex\WF_Pokedex\bin\Debug\xunit.assert.dll
+D:\Github\WF-Pokedex\WF_Pokedex\WF_Pokedex\bin\Debug\xunit.core.dll
+D:\Github\WF-Pokedex\WF_Pokedex\WF_Pokedex\bin\Debug\xunit.execution.desktop.dll
+D:\Github\WF-Pokedex\WF_Pokedex\WF_Pokedex\bin\Debug\xunit.abstractions.xml
+D:\Github\WF-Pokedex\WF_Pokedex\WF_Pokedex\bin\Debug\xunit.assert.xml
+D:\Github\WF-Pokedex\WF_Pokedex\WF_Pokedex\bin\Debug\xunit.core.xml
+D:\Github\WF-Pokedex\WF_Pokedex\WF_Pokedex\bin\Debug\xunit.execution.desktop.xml
