@@ -1,0 +1,5 @@
+D:\Github\WF-Pokedex\WF_Pokedex\StringExtensions\bin\Debug\StringExtensions.dll
+D:\Github\WF-Pokedex\WF_Pokedex\StringExtensions\bin\Debug\StringExtensions.pdb
+D:\Github\WF-Pokedex\WF_Pokedex\StringExtensions\obj\Debug\StringExtensions.csproj.CoreCompileInputs.cache
+D:\Github\WF-Pokedex\WF_Pokedex\StringExtensions\obj\Debug\StringExtensions.dll
+D:\Github\WF-Pokedex\WF_Pokedex\StringExtensions\obj\Debug\StringExtensions.pdb
