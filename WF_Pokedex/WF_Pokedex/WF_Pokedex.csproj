@@ -67,7 +67,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Src\HttpImageLoader.cs" />
     <Compile Include="Src\Pokedex.cs">
       <SubType>Form</SubType>
     </Compile>

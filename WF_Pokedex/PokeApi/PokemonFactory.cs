@@ -3,9 +3,7 @@ using PokeApi;
 using System;
 using System.Collections.Generic;
 using System.Drawing;
-using System.IO;
 using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 using WF_Pokedex.PokeApiServices;
 
@@ -17,19 +15,24 @@ namespace WF_Pokedex
         private readonly PokemonService pokemonService;
 
         private readonly SpriteLoader spriteLoader;
+        private readonly PokeApiNameConverter converter;
 
         public PokemonFactory()
         {
             speciesService = new PokemonSpeciesService();
             pokemonService = new PokemonService();
             spriteLoader = new SpriteLoader();
+            converter = new PokeApiNameConverter();
         }
 
         public async Task<Pokemon> CreatePokemon(string nameOrId)
         {
             JObject speciesData = await speciesService.GetById(nameOrId);
             JObject pokemonData = await pokemonService.GetById(nameOrId);
-            string pkmName = pokemonData.Value<string>("name");
+
+            string apiName = pokemonData.Value<string>("name");
+            string displayName = converter.GetDisplayName(apiName);
+
             int pkmId = pokemonData.Value<int>("id");
             string genus = GetGenus(speciesData);
             (string t1, string t2) = GetTypes(pokemonData);
@@ -43,8 +46,8 @@ namespace WF_Pokedex
             string frontSpriteUrl = spriteUrls.Value<string>("front_default");
             Image frontSprite = await spriteLoader.LoadSprite(frontSpriteUrl);
             
-            return new Pokemon(pkmName, pkmId, genus, t1, t2,
-                height, weight, frontSprite, pokedexEntries);
+            return new Pokemon(apiName, displayName, pkmId, genus, t1, t2,
+                height, weight, frontSprite, pokedexEntries, null);
         }
 
         private string GetGenus(JObject speciesData)

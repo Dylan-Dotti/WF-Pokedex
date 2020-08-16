@@ -1,17 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Drawing;
-using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace WF_Pokedex
 {
     public class Pokemon
     {
-        public string Name { get; private set; }
-        public string DisplayName { get => converter.GetDisplayName(Name); }
+        public string ApiName { get; private set; }
+        public string DisplayName { get; private set; }
 
         public int Id { get; private set; }
         public string Genus { get; private set; }
@@ -21,14 +16,15 @@ namespace WF_Pokedex
         public float Weight { get; private set; }
         public Image FrontSprite { get; private set; }
         public IReadOnlyDictionary<string, string> PokedexEntries { get; private set; }
+        public IReadOnlyDictionary<string, int> BaseStats { get; private set; }
 
-        private readonly PokeApiNameConverter converter;
-
-        public Pokemon(string name, int id, string genus,
+        public Pokemon(string apiName, string displayName, int id, string genus,
             string type1, string type2, float height, float weight,
-            Image frontSprite, IReadOnlyDictionary<string, string> pokedexEntries)
+            Image frontSprite, IReadOnlyDictionary<string, string> pokedexEntries,
+            IReadOnlyDictionary<string, int> baseStats)
         {
-            Name = name;
+            ApiName = apiName;
+            DisplayName = displayName;
             Id = id;
             Genus = genus;
             Type1 = type1;
@@ -37,7 +33,7 @@ namespace WF_Pokedex
             Weight = weight;
             FrontSprite = frontSprite;
             PokedexEntries = pokedexEntries;
-            converter = new PokeApiNameConverter();
+            BaseStats = baseStats;
         }
 
         public bool HasSecondType() => Type2 != null;
