@@ -39,15 +39,15 @@ namespace WF_Pokedex
             float height = GetHeightMeters(pokemonData);
             float weight = GetWeightKilograms(pokemonData);
 
-            Dictionary<string, string> pokedexEntries =
-                GetPokedexEntries(speciesData);
+            var pokedexEntries = GetPokedexEntries(speciesData);
+            var baseStats = GetBaseStats(pokemonData);
 
             JObject spriteUrls = pokemonData.Value<JObject>("sprites");
             string frontSpriteUrl = spriteUrls.Value<string>("front_default");
             Image frontSprite = await spriteLoader.LoadSprite(frontSpriteUrl);
             
             return new Pokemon(apiName, displayName, pkmId, genus, t1, t2,
-                height, weight, frontSprite, pokedexEntries, null);
+                height, weight, frontSprite, pokedexEntries, baseStats);
         }
 
         private string GetGenus(JObject speciesData)
@@ -100,6 +100,19 @@ namespace WF_Pokedex
                 }
             }
             return versionDescriptions;
+        }
+
+        private Dictionary<string, int> GetBaseStats(JObject pokemonData)
+        {
+            Dictionary<string, int> baseStats = new Dictionary<string, int>();
+            JArray stats = pokemonData.Value<JArray>("stats");
+            foreach (JObject stat in stats)
+            {
+                string statName = stat.Value<JObject>("stat").Value<string>("name");
+                int statValue = stat.Value<int>("base_stat");
+                baseStats.Add(statName, statValue);
+            }
+            return baseStats;
         }
 
         private string GetVersionName(JObject obj)

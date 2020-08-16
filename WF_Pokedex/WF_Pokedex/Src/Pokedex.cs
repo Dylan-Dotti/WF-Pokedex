@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PokeApi;
+using System;
 using System.Windows.Forms;
 
 namespace WF_Pokedex
